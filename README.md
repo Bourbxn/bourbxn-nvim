@@ -21,6 +21,7 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 <img width="1440" alt="Screenshot 2566-02-28 at 14 55 56" src="https://user-images.githubusercontent.com/86193685/221791083-2cdbf058-5c29-4119-bf8d-ee3537d0e992.png">
 <img width="1440" alt="Screenshot 2566-02-28 at 14 55 36" src="https://user-images.githubusercontent.com/86193685/221791138-dfbf6048-df5a-4b73-ae4e-f34658eea231.png">
 <img width="1440" alt="Screenshot 2566-02-28 at 15 01 58" src="https://user-images.githubusercontent.com/86193685/221791172-fef135b0-0e44-4d7d-b8b2-0ed795a0deb5.png">
+<br>
 
 ## Plugins List
 - Beautiful and minimal theme by [tokyonight](https://github.com/folke/tokyonight.nvim)
@@ -39,6 +40,7 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 - Easy way to commenting with [Comment](https://github.com/numToStr/Comment.nvim)
 - Indent tab blankline with [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - Color highlighting with [nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors)
+<br>
 
 ## Install
 
@@ -61,7 +63,6 @@ Windows
 ```bash
 git clone https://github.com/arn355/my-nvim-config.git $HOME\AppData\Local\nvim
 ```
-<br><br>
 
 ## Uninstall
 MacOS/Linux
@@ -75,6 +76,7 @@ Windows
 rd -r ~\AppData\Local\nvim
 rd -r ~\AppData\Local\nvim-data
 ```
+<br>
 
 ## Configure
 
@@ -106,6 +108,7 @@ require("bourbxn.plugins.plugins-conf.<config-filename>")
 1. Open and edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
 2. Delete ```use("<plugin-repository>")``` and save
 3. If this plugin have configuration file you must remove configuration file in ```nvim/lua/bourbxn/plugins/plugins-conf/``` and delete require in ```init.lua``` in ```nvim/lua/bourbxn/plugins/plugins-conf/init.lua```
+<br>
 
 ## Keymaps
 wait..
