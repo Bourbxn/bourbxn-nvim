@@ -90,5 +90,6 @@ return require("packer").startup(function(use)
 	end
 end)
 ```
+3. Save and It will install plugin by itself.
 
 #### Remove Plugins
