@@ -35,4 +35,5 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 - Color highlighting with [nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors)
 
 ## Install
-### 1.
+
+#### 1.
