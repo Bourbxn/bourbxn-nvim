@@ -135,3 +135,5 @@ require("bourbxn.plugins.plugins-conf.<config-filename>")
 ### Visual Mode
 - ```J``` move all line that selected down
 - ```K``` move all line that selected up
+
+Configure your own at ```keymaps.lua``` in ```nvim/lua/bourbxn/core/keymaps.lua```
