@@ -102,4 +102,6 @@ require("bourbxn.plugins.plugins-conf.<config-filename>")
 ```
 
 #### Remove Plugins
-1.
+1. Open and edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
+2. Delete ```use("<plugin-repository>")``` and save
+3. If this plugin have configuration file you must remove configuration file and delete require in ```init.lua``` in ```nvim/lua/bourbxn/plugins/plugins-conf/init.lua```
