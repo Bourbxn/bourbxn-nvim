@@ -112,4 +112,7 @@ require("bourbxn.plugins.plugins-conf.<config-filename>")
 <br>
 
 ## Keymaps
-wait..
+
+### Normal Mode
+- ```<spacebar>sv``` split window vertically
+	
