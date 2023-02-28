@@ -1,15 +1,9 @@
 <h1 align="center">BourbxnNvim</h1>
 
 <div align="center">
-	<a href="#showcase">Install</a>
+	<a href="#showcase">Showcase</a>
   <span> • </span>
-    	<a href="https://nvchad.github.io/quickstart/install">Install</a>
-  <span> • </span>
-       	<a href="https://nvchad.github.io/contribute">Contribute</a>
-  <span> • </span>
-	<a href="https://github.com/NvChad/NvChad#gift_heart-support">Support</a>
-  <span> • </span>
-        <a href="https://nvchad.github.io/Features">Features</a>
+    	<a href="#plugins-list">Plugins List</a>
   <p></p>
 </div> 
 
