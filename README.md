@@ -24,6 +24,7 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 <br>
 
 ## Plugins List
+Collection of neovim plugins at [neovimcraft](https://neovimcraft.com/)
 - Beautiful and minimal theme by [tokyonight](https://github.com/folke/tokyonight.nvim)
 - Starts dashboard with [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
 - File explorer tree with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
@@ -81,7 +82,6 @@ rd -r ~\AppData\Local\nvim-data
 ## Configure
 
 ### Add Plugins
-Collection of neovim plugins at [neovimcraft](https://neovimcraft.com/)
 1. Open and edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
 2. Add ```use("<plugin-repository>")```
 ```bash
