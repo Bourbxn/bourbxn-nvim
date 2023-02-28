@@ -4,6 +4,8 @@
 	<a href="#showcase">Showcase</a>
   <span> • </span>
     	<a href="#plugins-list">Plugins List</a>
+   <span> • </span>
+	<a href="#install">Install</a>
   <p></p>
 </div> 
 
