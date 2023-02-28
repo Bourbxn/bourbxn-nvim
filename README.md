@@ -1,4 +1,5 @@
 <h1 align="center">BourbxnNvim</h1>
+
 **NOTICE** : This is a first version of my neovim configuration. You can install my neovim configuration and install other plugin or edit
 my configuration as much as you want. My neovim is the refference to newer neovim user. Vim is better nahhh😎.
 
