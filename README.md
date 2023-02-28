@@ -72,3 +72,10 @@ Windows
 rd -r ~\AppData\Local\nvim
 rd -r ~\AppData\Local\nvim-data
 ```
+
+## Configure
+
+#### Add Plugins
+Edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
+
+#### Remove Plugins
