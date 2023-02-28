@@ -36,4 +36,8 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 
 ## Install
 
-#### 1.
+#### 1. Install neovim to your device.
+MacOS\Linux
+```brew install neovim```
+Windows
+```scoop install neovim```
