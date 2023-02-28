@@ -7,8 +7,6 @@
    <span> • </span>
 	<a href="#install">Install</a>
    <span> • </span>
-	<a href="#uninstall">Uninstall</a>
-   <span> • </span>
 	<a href="#configure">Configure</a>
    <span> • </span>
 	<a href="#Keymaps">Keymaps</a>
