@@ -77,11 +77,11 @@ rd -r ~\AppData\Local\nvim-data
 
 #### Add Plugins
 1. Open and edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
-2. Add ```use("<plugin repository>")```
+2. Add ```use("<plugin-repository>")```
 ```bash
 return require("packer").startup(function(use)
 	...
-	use("<plugin repository>")
+	use("<plugin-repository>")
 	...
 	use(
 	-- Automatically set up your configuration after cloning packer.nvim
@@ -92,5 +92,12 @@ return require("packer").startup(function(use)
 end)
 ```
 3. Save and It will install plugin by itself.
+4. Mostly plugins can configure and you can configure that by go to directory ```nvim/lua/bourbxn/plugins/plugins-conf```
+5. Create new file configuration ```touch <config-filename>.lua``` and add configuration in this file
+6. Open and edit ```init.lua``` in ```nvim/lua/bourbxn/plugins/plugins-conf/init.lua``` then add
+```bash
+require("bourbxn.plugins.plugins-conf.<config-filename>")
+```
 
 #### Remove Plugins
+1.
