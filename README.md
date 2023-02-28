@@ -61,6 +61,7 @@ Windows
 ```bash
 git clone https://github.com/arn355/my-nvim-config.git $HOME\AppData\Local\nvim
 ```
+<br><br>
 
 ## Uninstall
 MacOS/Linux
