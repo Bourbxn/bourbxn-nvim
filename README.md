@@ -115,4 +115,23 @@ require("bourbxn.plugins.plugins-conf.<config-filename>")
 
 ### Normal Mode
 - ```<spacebar>sv``` split window vertically
-	
+- ```<spacebar>sh``` split window horizontally
+- ```<spacebar>se``` make split windows equal width and height
+- ```<spacebar>sx``` close current split window
+- ```<spacebar>nh``` clear search highlights
+- ```<spacebar>ee``` toggle explorer tree
+- ```<spacebar>ef``` focus explorer tree
+- ```<spacebar>ff``` find files within current working directory, respects .gitignore
+- ```<spacebar>hh``` move to left tab in top navigation
+- ```<spacebar>ll``` move to right tab in top navigation
+- ```<spacebar>gg``` move to last tab in top navigation
+- ```<spacebar>g<n>``` move to tab n(1-9) in top navigation
+- ```<spacebar>cc``` close current tab in top navigation
+- ```<spacebar>tt``` toggle terminal
+
+### Insert Mode
+- ```<spacebar>jk``` switch to normal mode
+
+### Visual Mode
+- ```J``` move all line that selected down
+- ```K``` move all line that selected up
