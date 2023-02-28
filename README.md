@@ -14,7 +14,7 @@
 </div> 
 
 **NOTICE** : This is a first version of my neovim configuration. You can install my neovim configuration and install other plugin or edit
-my configuration as much as you want. My neovim is the refference to newer neovim user. Vim is better nahhh😎.
+my configuration as much as you want. My neovim is the refference to newer neovim user. Vim is better na kub.
 
 ## Showcase
 <img width="1440" alt="Screenshot 2566-02-28 at 15 00 45" src="https://user-images.githubusercontent.com/86193685/221790969-c2dd1ca8-5044-4690-b5f9-fd0c70794d62.png">
