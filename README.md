@@ -1,7 +1,7 @@
 <h1 align="center">BourbxnNvim</h1>
 
 <div align="center">
-	[Showcase](#showcase)
+	<a href="#showcase">Install</a>
   <span> • </span>
     	<a href="https://nvchad.github.io/quickstart/install">Install</a>
   <span> • </span>
