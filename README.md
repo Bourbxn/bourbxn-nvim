@@ -1,6 +1,17 @@
 <h1 align="center">BourbxnNvim</h1>
 
-[go heading](#plugins-list)
+<div align="center">
+	[Showcase](#showcase)
+  <span> • </span>
+    	<a href="https://nvchad.github.io/quickstart/install">Install</a>
+  <span> • </span>
+       	<a href="https://nvchad.github.io/contribute">Contribute</a>
+  <span> • </span>
+	<a href="https://github.com/NvChad/NvChad#gift_heart-support">Support</a>
+  <span> • </span>
+        <a href="https://nvchad.github.io/Features">Features</a>
+  <p></p>
+</div> 
 
 **NOTICE** : This is a first version of my neovim configuration. You can install my neovim configuration and install other plugin or edit
 my configuration as much as you want. My neovim is the refference to newer neovim user. Vim is better nahhh😎.
