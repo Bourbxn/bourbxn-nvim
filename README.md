@@ -57,3 +57,16 @@ Windows
 ```bash
 git clone https://github.com/arn355/my-nvim-config.git $HOME\AppData\Local\nvim
 ```
+
+## Uninstall
+MacOS/Linux
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.cache/nvim
+```
+Windows
+```bash
+rd -r ~\AppData\Local\nvim
+rd -r ~\AppData\Local\nvim-data
+```
