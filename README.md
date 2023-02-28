@@ -36,7 +36,7 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 
 ## Install
 
-### 1. Install neovim to your device.
+### 1. Install Neovim
 MacOS/Linux
 ```bash
 brew install neovim
@@ -44,4 +44,14 @@ brew install neovim
 Windows
 ```bash
 scoop install neovim
+```
+
+### 2. Install BourbxnVim
+MacOS/Linux
+```bash
+git clone https://github.com/arn355/my-nvim-config.git ~/.config/nvim
+```
+Windows
+```bash
+git clone https://github.com/arn355/my-nvim-config.git $HOME\AppData\Local\nvim
 ```
