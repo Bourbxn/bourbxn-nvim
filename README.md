@@ -79,7 +79,7 @@ rd -r ~\AppData\Local\nvim-data
 
 ## Configure
 
-## Add Plugins
+### Add Plugins
 1. Open and edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
 2. Add ```use("<plugin-repository>")```
 ```bash
