@@ -76,6 +76,19 @@ rd -r ~\AppData\Local\nvim-data
 ## Configure
 
 #### Add Plugins
-Edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
+1. Open and edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
+2. Add ```use("<plugin repository>")
+```bash
+return require("packer").startup(function(use)
+	...
+	use("<plugin repository>")
+	use(
+	-- Automatically set up your configuration after cloning packer.nvim
+	-- Put this at the end after all plugins
+	if packer_bootstrap then
+		require("packer").sync()
+	end
+end)
+```
 
 #### Remove Plugins
