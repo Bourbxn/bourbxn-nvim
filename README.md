@@ -6,6 +6,8 @@
     	<a href="#plugins-list">Plugins List</a>
    <span> • </span>
 	<a href="#install">Install</a>
+   <span> • </span>
+	<a href="#uninstall">Uninstall</a>
   <p></p>
 </div> 
 
@@ -38,7 +40,7 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 
 ## Install
 
-### 1. Install Neovim
+#### 1. Install Neovim
 MacOS/Linux
 ```bash
 brew install neovim
@@ -48,7 +50,7 @@ Windows
 scoop install neovim
 ```
 
-### 2. Install BourbxnVim
+#### 2. Install BourbxnVim
 MacOS/Linux
 ```bash
 git clone https://github.com/arn355/my-nvim-config.git ~/.config/nvim
