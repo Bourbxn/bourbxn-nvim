@@ -1,0 +1,5 @@
+require("bourbxn.plugins.plugins-setup")
+require("bourbxn.plugins.plugins-conf")
+require("bourbxn.core.keymaps")
+require("bourbxn.core.options")
+require("bourbxn.core.colorscheme")
