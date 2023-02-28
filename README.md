@@ -5,3 +5,6 @@
 <img width="1440" alt="Screenshot 2566-02-28 at 14 55 56" src="https://user-images.githubusercontent.com/86193685/221791083-2cdbf058-5c29-4119-bf8d-ee3537d0e992.png">
 <img width="1440" alt="Screenshot 2566-02-28 at 14 55 36" src="https://user-images.githubusercontent.com/86193685/221791138-dfbf6048-df5a-4b73-ae4e-f34658eea231.png">
 <img width="1440" alt="Screenshot 2566-02-28 at 15 01 58" src="https://user-images.githubusercontent.com/86193685/221791172-fef135b0-0e44-4d7d-b8b2-0ed795a0deb5.png">
+
+## Plugins List
+- File explorer tree with [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
