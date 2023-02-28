@@ -11,7 +11,7 @@
    <span> • </span>
 	<a href="#configure">Configure</a>
    <span> • </span>
-	<a href="#manual">Manual</a>
+	<a href="#Keymaps">Keymaps</a>
   <p></p>
 </div> 
 
@@ -108,4 +108,5 @@ require("bourbxn.plugins.plugins-conf.<config-filename>")
 2. Delete ```use("<plugin-repository>")``` and save
 3. If this plugin have configuration file you must remove configuration file in ```nvim/lua/bourbxn/plugins/plugins-conf/``` and delete require in ```init.lua``` in ```nvim/lua/bourbxn/plugins/plugins-conf/init.lua```
 
-## Manual
+## Keymaps
+wait..
