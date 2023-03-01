@@ -57,11 +57,11 @@ scoop install neovim
 #### 2. Install BourbxnVim
 MacOS/Linux
 ```bash
-git clone https://github.com/arn355/my-nvim-config.git ~/.config/nvim
+git clone https://github.com/Bourbxn/bourbxn-nvim.git ~/.config/nvim
 ```
 Windows
 ```bash
-git clone https://github.com/arn355/my-nvim-config.git $HOME\AppData\Local\nvim
+git clone https://github.com/Bourbxn/bourbxn-nvim.git $HOME\AppData\Local\nvim
 ```
 
 ## Uninstall
