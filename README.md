@@ -121,8 +121,8 @@ vim.g.mapleader = "<mapleader>"
 
 #### Configure Keymaps
 ```[mode]``` has 3 modes normal mode```n```, insert mode```i``` and visual mode```v``` <br>
-```[keys]``` can add many keys on keyboard <br>
-```[command]``` can add neovim command <br>
+```[keys]``` can add many keys on keyboard ex. ```"<leader>ee"``` <br>
+```[command]``` can add neovim command ex. ```"<cmd>NvimTreeToggle<cr>"``` <br>
 ```bash
 vim.g.mapleader = " "
 
