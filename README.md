@@ -176,6 +176,7 @@ Configure your own at ```keymaps.lua``` in ```nvim/lua/bourbxn/core/keymaps.lua`
 How to configure? 
 <a href="#configure-keymaps">Click here</a>
 <br>
+<br>
 
 ## Contributors
 
