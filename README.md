@@ -180,12 +180,12 @@ How to configure?
 <div>
 <span>
 <a href="https://github.com/Bourbxn">
- <img src="https://avatars.githubusercontent.com/u/86193685?s=400&u=f04f96199af790f4325e191a35d5ec8cb1488e4f&v=4" width="80"/>
+ <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/86193685?v=4&h=80&w=80&fit=cover&mask=circle&maxage=7d"/>
 </a>
 </span>
 <span>
 <a href="https://github.com/arn355">
- <img src="https://avatars.githubusercontent.com/u/86312780?v=4" width="80"/>
+ <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/86312780?v=4&h=80&w=80&fit=cover&mask=circle&maxage=7d"/>
 </a>
 </span>
 </div>
