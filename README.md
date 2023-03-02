@@ -109,8 +109,31 @@ require("bourbxn.plugins.plugins-conf.<config-filename>")
 1. Open and edit ```plugins-setup.lua``` in ```nvim/lua/bourbxn/plugins/plugins-setup.lua```
 2. Delete ```use("<plugin-repository>")``` and save
 3. If this plugin have configuration file you must remove configuration file in ```nvim/lua/bourbxn/plugins/plugins-conf/``` and delete require in ```init.lua``` in ```nvim/lua/bourbxn/plugins/plugins-conf/init.lua```
-<br>
 
+### Configure Keymaps
+Configure keymaps at ```keymaps.lua``` in ```nvim/lua/bourbxn/core/keymaps.lua```
+#### Configure Mapleader
+Mapleader is a first key to start using keymaps. Keymaps should use mapleader because keymaps shortkey will not cover default vim shortkey.
+Normally neovim user used spacebar as mapleader.
+```bash
+vim.g.mapleader = "<mapleader>"
+```
+
+#### Configure Keymaps
+```[mode]``` has 3 modes normal mode```n```, insert mode```i``` and visual mode```v```
+```[keys]``` can add many keys on keyboard
+```[command]``` can add neovim command
+```bash
+vim.g.mapleader = " "
+
+local keymap = vim.keymap
+local opts = { buffer = 0 }
+...
+keymap.set("[mode]", "<leader>[keys]", "<cmd>[command]<cr>")
+```
+
+
+<br>
 ## Keymaps
 
 ### Normal Mode
