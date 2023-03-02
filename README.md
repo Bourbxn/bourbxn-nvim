@@ -177,6 +177,6 @@ How to configure?
 
 ## Contributors
 
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
+<a href = "https://github.com/Bourbxn">
+  <img src = "https://avatars.githubusercontent.com/u/86193685?s=400&u=f04f96199af790f4325e191a35d5ec8cb1488e4f&v=4"/>
 </a>
