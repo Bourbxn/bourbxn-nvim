@@ -176,6 +176,7 @@ How to configure?
 <br>
 
 ## Contributors
+
 <a href = "https://github.com/Bourbxn">
-  <img src = "https://contrib.rocks/image?repo = Bourbxn/bourbxn-nvim/>
+  <img src = "https://contrib.rocks/image?repo = Bourbxn/bourbxn-nvim/>"
 </a>
