@@ -171,4 +171,5 @@ keymap.set("[mode]", "<leader>[keys]", "<cmd>[command]<cr>")
 
 
 Configure your own at ```keymaps.lua``` in ```nvim/lua/bourbxn/core/keymaps.lua```<br>
-How to configure? [click here](configure-keymaps)
+How to configure? 
+<a href="#configure-keymaps">Click here</a>
