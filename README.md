@@ -178,5 +178,5 @@ How to configure?
 ## Contributors
 
 <a href = "https://github.com/Bourbxn">
-  <img src = "https://avatars.githubusercontent.com/u/86193685?s=400&u=f04f96199af790f4325e191a35d5ec8cb1488e4f&v=4" width="100"/>
+  <img src = "https://avatars.githubusercontent.com/u/86193685?s=400&u=f04f96199af790f4325e191a35d5ec8cb1488e4f&v=4" width="100" style="border-radius:50%"/>
 </a>
