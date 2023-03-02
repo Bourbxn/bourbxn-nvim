@@ -9,7 +9,9 @@
    <span> • </span>
 	<a href="#configure">Configure</a>
    <span> • </span>
-	<a href="#Keymaps">Keymaps</a>
+	<a href="#keymaps">Keymaps</a>
+     <span> • </span>
+	<a href="#contributors">Contributors</a>
   <p></p>
 </div> 
 
@@ -189,3 +191,4 @@ How to configure?
 </a>
 </span>
 </div>
+
