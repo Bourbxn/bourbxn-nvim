@@ -134,6 +134,7 @@ keymap.set("[mode]", "<leader>[keys]", "<cmd>[command]<cr>")
 
 
 <br>
+
 ## Keymaps
 
 ### Normal Mode
