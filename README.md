@@ -170,5 +170,5 @@ keymap.set("[mode]", "<leader>[keys]", "<cmd>[command]<cr>")
 | `K`             | move all line that selected up                       |
 
 
-Configure your own at ```keymaps.lua``` in ```nvim/lua/bourbxn/core/keymaps.lua```
+Configure your own at ```keymaps.lua``` in ```nvim/lua/bourbxn/core/keymaps.lua```<br>
 How to configure? [click here](configure-keympas)
