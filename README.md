@@ -185,6 +185,7 @@ How to configure?
  <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/86193685?v=4&h=80&w=80&fit=cover&mask=circle&maxage=7d"/>
 </a>
 </span>
+&nbsp;
 <span>
 <a href="https://github.com/arn355">
  <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/86312780?v=4&h=80&w=80&fit=cover&mask=circle&maxage=7d"/>
