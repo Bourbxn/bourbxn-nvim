@@ -176,13 +176,16 @@ How to configure?
 <br>
 
 ## Contributors
-<style>
- img[src$="#avatar"] {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  max-width: 50%;
-  }
-</style>
 
-![Avatar](https://picsum.photos/id/219/300/300#avatar)
+<div>
+<span>
+<a href="https://github.com/Bourbxn">
+ <img src="https://avatars.githubusercontent.com/u/86193685?s=400&u=f04f96199af790f4325e191a35d5ec8cb1488e4f&v=4" width="80"/>
+</a>
+</span>
+<span>
+<a href="https://github.com/arn355">
+ <img src="https://avatars.githubusercontent.com/u/86312780?v=4" width="80"/>
+</a>
+</span>
+</div>
