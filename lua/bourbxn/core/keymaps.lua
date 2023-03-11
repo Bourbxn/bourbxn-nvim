@@ -22,6 +22,7 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- nvim-tree
 keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>ef", ":NvimTreeFocus<CR>")
+keymap.set("n", "<leader>ec", ":NvimTreeCollapse<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -50,6 +51,3 @@ keymap.set("n", "<leader>g8", "<cmd>BufferGoto 8<cr>") -- Go to 8
 keymap.set("n", "<leader>g9", "<cmd>BufferGoto 9<cr>") -- Go to 9
 keymap.set("n", "<leader>gg", "<cmd>BufferLast<cr>") -- Go to last
 keymap.set("n", "<leader>cc", "<cmd>BufferClose<cr>") -- Close
-
--- toggle term
-keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<cr>") -- Open Terminal

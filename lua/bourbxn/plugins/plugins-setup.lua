@@ -91,11 +91,9 @@ return require("packer").startup(function(use)
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- telescope
 
 	-- Barbar Navigation Barbar
-	use("nvim-tree/nvim-web-devicons")
 	use({ "romgrk/barbar.nvim", requires = "nvim-web-devicons" })
 
 	-- Auto Rename Tag (HTML)
-	use("windwp/nvim-ts-autotag")
 
 	-- Dashboard
 	use({
@@ -107,13 +105,7 @@ return require("packer").startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 
 	-- Toogle Term
-	use({
-		"akinsho/toggleterm.nvim",
-		tag = "*",
-		config = function()
-			require("toggleterm").setup()
-		end,
-	})
+	use("akinsho/toggleterm.nvim")
 
 	-- Color Highlight
 	use("brenoprata10/nvim-highlight-colors")
