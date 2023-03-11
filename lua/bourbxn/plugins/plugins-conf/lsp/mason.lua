@@ -24,6 +24,7 @@ local servers = {
 	"lua_ls", -- lua
 	"dockerls", -- docker
 	"emmet_ls", -- emmet
+	"gopls", -- golang
 }
 
 -- list of linters & formatters for mason to install
