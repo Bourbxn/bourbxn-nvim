@@ -16,13 +16,15 @@ nvimtree.setup({
 		icons = {
 			glyphs = {
 				folder = {
-					arrow_closed = "", -- arrow when folder is closed
-					arrow_open = "", -- arrow when folder is open
+					arrow_closed = "", -- arrow when folder is closed
+					arrow_open = "", -- arrow when folder is open
+				},
+				git = {
+					untracked = "",
 				},
 			},
 		},
 	},
-
 	-- for explorer to work well with window splits
 	actions = {
 		open_file = {

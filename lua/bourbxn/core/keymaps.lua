@@ -38,16 +38,17 @@ keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git bra
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview
 
 -- barbar
-keymap.set("n", "<leader>hh", "<cmd>BufferPrevious<cr>") -- Move to previous
-keymap.set("n", "<leader>ll", "<cmd>BufferNext<cr>") -- Move to next
-keymap.set("n", "<leader>g1", "<cmd>BufferGoto 1<cr>") -- Go to 1
-keymap.set("n", "<leader>g2", "<cmd>BufferGoto 2<cr>") -- Go to 2
-keymap.set("n", "<leader>g3", "<cmd>BufferGoto 3<cr>") -- Go to 3
-keymap.set("n", "<leader>g4", "<cmd>BufferGoto 4<cr>") -- Go to 4
-keymap.set("n", "<leader>g5", "<cmd>BufferGoto 5<cr>") -- Go to 5
-keymap.set("n", "<leader>g6", "<cmd>BufferGoto 6<cr>") -- Go to 6
-keymap.set("n", "<leader>g7", "<cmd>BufferGoto 7<cr>") -- Go to 7
-keymap.set("n", "<leader>g8", "<cmd>BufferGoto 8<cr>") -- Go to 8
-keymap.set("n", "<leader>g9", "<cmd>BufferGoto 9<cr>") -- Go to 9
-keymap.set("n", "<leader>gg", "<cmd>BufferLast<cr>") -- Go to last
-keymap.set("n", "<leader>cc", "<cmd>BufferClose<cr>") -- Close
+keymap.set("n", "<TAB>", "<cmd>BufferNext<cr>")
+keymap.set("n", "\\", "<cmd>BufferPrevious<cr>")
+keymap.set("n", "1<TAB>", "<cmd>BufferGoto 1<cr>")
+keymap.set("n", "2<TAB>", "<cmd>BufferGoto 2<cr>")
+keymap.set("n", "3<TAB>", "<cmd>BufferGoto 3<cr>")
+keymap.set("n", "4<TAB>", "<cmd>BufferGoto 4<cr>")
+keymap.set("n", "5<TAB>", "<cmd>BufferGoto 5<cr>")
+keymap.set("n", "6<TAB>", "<cmd>BufferGoto 6<cr>")
+keymap.set("n", "7<TAB>", "<cmd>BufferGoto 7<cr>")
+keymap.set("n", "8<TAB>", "<cmd>BufferGoto 8<cr>")
+keymap.set("n", "9<TAB>", "<cmd>BufferGoto 9<cr>")
+keymap.set("n", "<leader>hh", "<cmd>BufferMovePrevious<cr>")
+keymap.set("n", "<leader>ll", "<cmd>BufferMoveNext<cr>")
+keymap.set("n", "<leader>cc", "<cmd>BufferClose<cr>")

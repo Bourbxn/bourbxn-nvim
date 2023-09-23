@@ -90,8 +90,8 @@ return require("packer").startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better telescope performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- telescope
 
-	-- Barbar Navigation Barbar
-	use({ "romgrk/barbar.nvim", requires = "nvim-web-devicons" })
+	-- Bar Navigation
+	use("romgrk/barbar.nvim")
 
 	-- Auto Rename Tag (HTML)
 

@@ -4,14 +4,14 @@ if not setup then
 end
 
 toggleterm.setup({
-	size = 20,
+	size = 15,
 	open_mapping = [[<c-\>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminal = true,
 	start_in_insert = true,
 	insert_mappings = true,
-	direction = "float",
+	direction = "horizontal",
 	close_on_exit = true,
 	shell = vim.o.shell,
 })
