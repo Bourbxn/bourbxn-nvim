@@ -16,6 +16,9 @@ null_ls.setup({
 		formatting.csharpier,
 		formatting.prettier,
 		formatting.stylua,
+		formatting.gofumpt,
+		formatting.goimports_reviser,
+		formatting.golines,
 		diagnostics.eslint_d.with({
 			-- only enable eslint if root has .eslintrc.js
 			condition = function(utils)

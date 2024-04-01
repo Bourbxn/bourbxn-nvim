@@ -25,6 +25,7 @@ local servers = {
 	"dockerls", -- docker
 	"emmet_ls", -- emmet
 	"gopls", -- golang
+	"jdtls", -- java
 }
 
 -- list of linters & formatters for mason to install

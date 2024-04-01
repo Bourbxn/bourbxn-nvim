@@ -131,3 +131,10 @@ lspconfig["gopls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
+
+-- java server
+lspconfig["jdtls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "java" },
+})

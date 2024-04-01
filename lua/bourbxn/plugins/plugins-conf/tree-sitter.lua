@@ -8,7 +8,7 @@ treesitter.setup({
 	highlight = {
 		enable = true,
 	},
-	indent = { enable = true }, -- enable indentation
+	indent = { enable = false }, -- enable indentation
 	autotag = { enable = true }, -- enable autotagging with nvim-ts-autotag plugins
 	-- ensure these language parsers are installed
 	ensure_installed = {
@@ -32,6 +32,8 @@ treesitter.setup({
 		"vue",
 		"dockerfile",
 		"gitignore",
+		"go",
+		"java",
 	},
 	auto_install = true, -- auto install above language parsers
 })

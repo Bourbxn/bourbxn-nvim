@@ -8,6 +8,7 @@ keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
+keymap.set("n", "<leader>er", "<C-w>w")
 
 -- exit insert mode
 keymap.set("i", "jk", "<ESC>")
@@ -52,3 +53,7 @@ keymap.set("n", "9<TAB>", "<cmd>BufferGoto 9<cr>")
 keymap.set("n", "<leader>hh", "<cmd>BufferMovePrevious<cr>")
 keymap.set("n", "<leader>ll", "<cmd>BufferMoveNext<cr>")
 keymap.set("n", "<leader>cc", "<cmd>BufferClose<cr>")
+
+-- Hop
+keymap.set("n", "S", "<cmd>HopPattern<cr>")
+keymap.set("n", "s", "<cmd>HopWord<cr>")

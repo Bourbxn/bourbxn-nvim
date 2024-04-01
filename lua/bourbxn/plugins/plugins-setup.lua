@@ -110,6 +110,19 @@ return require("packer").startup(function(use)
 	-- Color Highlight
 	use("brenoprata10/nvim-highlight-colors")
 
+	-- Java LSP
+	use("mfussenegger/nvim-jdtls")
+
+	-- Hop motion
+	use({
+		"phaazon/hop.nvim",
+		branch = "v2", -- optional but strongly recommended
+		config = function()
+			-- you can configure Hop the way you like here; see :h hop-config
+			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+		end,
+	})
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
