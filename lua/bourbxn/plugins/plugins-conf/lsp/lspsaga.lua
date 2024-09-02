@@ -15,11 +15,11 @@ saga.setup({
 		edit = "<CR>",
 	},
 	symbol_in_winbar = {
-		enable = false,
+		enable = true,
 		separator = "  ",
 		hide_keyword = true,
 		show_file = true,
-		folder_level = 2,
+		folder_level = 1,
 		respect_root = false,
 		color_mode = false,
 	},

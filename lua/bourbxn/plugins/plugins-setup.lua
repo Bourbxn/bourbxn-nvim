@@ -19,7 +19,7 @@ vim.cmd([[
   augroup end
 ]])
 
-local status, packer = pcall(require, "packer")
+local status = pcall(require, "packer")
 if not status then
 	return
 end
@@ -97,7 +97,88 @@ return require("packer").startup(function(use)
 
 	-- Dashboard
 	use({
-		"glepnir/dashboard-nvim",
+		"nvimdev/dashboard-nvim",
+		event = "VimEnter",
+		config = function()
+			require("dashboard").setup({
+				theme = "doom",
+				config = {
+					header = {
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                     ]],
+						[[       ████ ██████           █████      ██                     ]],
+						[[      ███████████             █████                             ]],
+						[[      █████████ ███████████████████ ███   ███████████   ]],
+						[[     █████████  ███    █████████████ █████ ██████████████   ]],
+						[[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+						[[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+						[[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+					}, --your header
+					center = {
+						{
+							icon = "󰝰   ",
+							icon_hl = "Title",
+							desc = "Recent project                    ",
+							key = "p",
+							key_format = " %s", -- remove default surrounding `[]`
+							action = "Telescope projects",
+						},
+						{
+							icon = "󰈙   ",
+							icon_hl = "Title",
+							desc = "Recent File",
+							key = "f",
+							key_format = " %s", -- remove default surrounding `[]`
+							action = "Telescope oldfiles",
+						},
+						{
+							icon = "󰈞   ",
+							icon_hl = "Title",
+							desc = "Find File",
+							key = "h",
+							key_format = " %s", -- remove default surrounding `[]`
+							action = "Telescope find_files",
+						},
+						{
+							icon = "   ",
+							icon_hl = "Title",
+							desc = "Config",
+							key = "c",
+							key_format = " %s", -- remove default surrounding `[]`
+							action = "edit ~/.config/nvim/",
+						},
+						{
+							icon = "󰈆   ",
+							icon_hl = "Title",
+							desc = "Exit",
+							key = "q",
+							key_format = " %s", -- remove default surrounding `[]`
+							action = "q",
+						},
+					},
+					footer = {
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						[[                                                                       ]],
+						"neovim loaded 49 packages",
+					}, --your footer
+				},
+			})
+		end,
 		requires = { "nvim-tree/nvim-web-devicons" },
 	})
 
@@ -122,6 +203,104 @@ return require("packer").startup(function(use)
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 		end,
 	})
+
+	use({ "mg979/vim-visual-multi", branch = "master" })
+
+	-- project manager
+	-- Lua
+	use({
+		"ahmedkhalf/project.nvim",
+		config = function()
+			require("project_nvim").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
+
+	-- Surround Nvim
+	use({
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end,
+	})
+
+	-- Trouble.nvim
+	use({
+		"folke/trouble.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+	})
+
+	-- Nui.nvim
+	use("MunifTanjim/nui.nvim")
+
+	-- Notify.nvim
+	use("rcarriga/nvim-notify")
+
+	-- Noice.nvim
+	use({
+		"folke/noice.nvim",
+		dependencies = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		},
+	})
+
+	-- Scroll Smooth
+	use("karb94/neoscroll.nvim")
+
+	-- UFO
+	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
+
+	-- statuscol to Support UFO
+	use({
+		"luukvbaal/statuscol.nvim",
+		config = function()
+			local builtin = require("statuscol.builtin")
+			require("statuscol").setup({
+				segments = {
+					{ text = { "%s" }, click = "v:lua.ScSa" },
+					{ text = { builtin.lnumfunc }, click = "v:lua.ScLa" },
+					{
+						text = { " ", builtin.foldfunc, " " },
+						condition = { builtin.not_empty, true, builtin.not_empty },
+						click = "v:lua.ScFa",
+					},
+				},
+			})
+		end,
+	})
+
+	-- todo comment
+	-- Lua
+	use({
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("todo-comments").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
+
+	-- harpoon
+	use("ThePrimeagen/harpoon")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

@@ -6,4 +6,5 @@ end
 barbar.setup({
 	auto_hide = 1,
 	animation = true,
+	maximum_length = 30,
 })

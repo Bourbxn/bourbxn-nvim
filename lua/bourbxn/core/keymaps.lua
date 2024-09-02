@@ -21,9 +21,9 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- nvim-tree
-keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>")
-keymap.set("n", "<leader>ef", ":NvimTreeFocus<CR>")
-keymap.set("n", "<leader>ec", ":NvimTreeCollapse<CR>")
+keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
+keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>")
+keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -39,8 +39,8 @@ keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git bra
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview
 
 -- barbar
-keymap.set("n", "<TAB>", "<cmd>BufferNext<cr>")
-keymap.set("n", "\\", "<cmd>BufferPrevious<cr>")
+keymap.set("n", "}", "<cmd>BufferNext<cr>")
+keymap.set("n", "{", "<cmd>BufferPrevious<cr>")
 keymap.set("n", "1<TAB>", "<cmd>BufferGoto 1<cr>")
 keymap.set("n", "2<TAB>", "<cmd>BufferGoto 2<cr>")
 keymap.set("n", "3<TAB>", "<cmd>BufferGoto 3<cr>")
@@ -57,3 +57,16 @@ keymap.set("n", "<leader>cc", "<cmd>BufferClose<cr>")
 -- Hop
 keymap.set("n", "S", "<cmd>HopPattern<cr>")
 keymap.set("n", "s", "<cmd>HopWord<cr>")
+
+-- Trouble
+keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>")
+keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>")
+
+-- Todo Comment
+keymap.set("n", "<leader>xc", "<cmd>TodoTrouble<cr>")
+
+-- Harpoon
+keymap.set("n", "<leader>hx", require("harpoon.mark").add_file)
+keymap.set("n", "<leader>hn", require("harpoon.ui").nav_next)
+keymap.set("n", "<leader>hp", require("harpoon.ui").nav_prev)
+keymap.set("n", "<leader>hm", "<cmd>Telescope harpoon marks<cr>")

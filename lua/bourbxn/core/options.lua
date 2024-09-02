@@ -43,3 +43,16 @@ opt.iskeyword:append("-")
 
 -- Bufferine
 opt.termguicolors = true
+
+-- files
+opt.swapfile = false
+opt.backup = false
+opt.writebackup = false
+
+-- fold
+opt.foldcolumn = "1" -- '0' is not bad
+opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+opt.foldlevelstart = 99
+opt.foldenable = true
+-- opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
