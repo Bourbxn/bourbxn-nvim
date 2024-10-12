@@ -8,11 +8,6 @@ if not cmp_nvim_lsp_setup then
 	return
 end
 
-local typescript_setup, typescript = pcall(require, "typescript")
-if not typescript_setup then
-	return
-end
-
 local keymap = vim.keymap
 
 -- enable keybinds for available lsp server
@@ -35,7 +30,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
 
 	-- typescript specific keymaps (e.g. rename file and update imports)
-	if client.name == "tsserver" then
+	if client.name == "ts_ls" then
 		keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>") -- rename file and update imports
 		keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports (not in youtube nvim video)
 		keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables (not in youtube nvim video)
@@ -61,7 +56,7 @@ lspconfig["html"].setup({
 })
 
 -- typescript & javascript server with plugin
-typescript.setup({
+lspconfig["ts_ls"].setup({
 	sever = {
 		capabilities = capabilities,
 		on_attach = on_attach,
@@ -126,15 +121,14 @@ lspconfig["dockerls"].setup({
 	on_attach = on_attach,
 })
 
--- golang server
-lspconfig["gopls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
 -- java server
 lspconfig["jdtls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	filetypes = { "java" },
+})
+
+lspconfig["gopls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
 })

@@ -54,19 +54,33 @@ keymap.set("n", "<leader>hh", "<cmd>BufferMovePrevious<cr>")
 keymap.set("n", "<leader>ll", "<cmd>BufferMoveNext<cr>")
 keymap.set("n", "<leader>cc", "<cmd>BufferClose<cr>")
 
--- Hop
-keymap.set("n", "S", "<cmd>HopPattern<cr>")
-keymap.set("n", "s", "<cmd>HopWord<cr>")
-
 -- Trouble
-keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>")
-keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>")
+keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
+keymap.set(
+	"n",
+	"<leader>xX",
+	"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+	{ desc = "Buffer Diagnostics (Trouble)" }
+)
+keymap.set("n", "<leader>cs", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols (Trouble)" })
+keymap.set(
+	"n",
+	"<leader>cl",
+	"<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+	{ desc = "LSP Definitions / references / ... (Trouble)" }
+)
+keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
+keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })
 
--- Todo Comment
-keymap.set("n", "<leader>xc", "<cmd>TodoTrouble<cr>")
+-- Noice
+keymap.set("n", "<leader>nd", "<cmd>Noice dismiss<cr>")
 
--- Harpoon
-keymap.set("n", "<leader>hx", require("harpoon.mark").add_file)
-keymap.set("n", "<leader>hn", require("harpoon.ui").nav_next)
-keymap.set("n", "<leader>hp", require("harpoon.ui").nav_prev)
-keymap.set("n", "<leader>hm", "<cmd>Telescope harpoon marks<cr>")
+-- Avante
+keymap.set({ "n", "v" }, "<leader>aa", "<cmd>AvanteAsk<cr>")
+keymap.set("n", "<leader>ar", "<cmd>AvanteRefresh<cr>")
+keymap.set({ "n", "v" }, "<leader>ae", "<cmd>AvanteEdit<cr>")
+keymap.set({ "n", "v" }, "<leader>ac", "<cmd>AvanteChat<cr>")
+keymap.set("n", "<leader>af", "<cmd>AvanteFocus<cr>")
+
+-- LazyGit
+keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>")

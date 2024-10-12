@@ -78,9 +78,21 @@ return require("packer").startup(function(use)
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
 	-- auto closing
-	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc.
-	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+	use({
+		"windwp/nvim-ts-autotag",
+		config = function()
+			require("nvim-ts-autotag").setup()
+		end,
+	}) -- autoclose tags
 
+	-- auto pair
+	use({
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = function()
+			require("nvim-autopairs").setup()
+		end,
+	})
 	-- commenting (gc + motion)
 	-- gcc (line comment)
 	-- gc9j (comment line 1 to line 9 (below))
@@ -138,7 +150,7 @@ return require("packer").startup(function(use)
 							icon = "󰈙   ",
 							icon_hl = "Title",
 							desc = "Recent File",
-							key = "f",
+							key = "r",
 							key_format = " %s", -- remove default surrounding `[]`
 							action = "Telescope oldfiles",
 						},
@@ -146,7 +158,7 @@ return require("packer").startup(function(use)
 							icon = "󰈞   ",
 							icon_hl = "Title",
 							desc = "Find File",
-							key = "h",
+							key = "f",
 							key_format = " %s", -- remove default surrounding `[]`
 							action = "Telescope find_files",
 						},
@@ -194,18 +206,6 @@ return require("packer").startup(function(use)
 	-- Java LSP
 	use("mfussenegger/nvim-jdtls")
 
-	-- Hop motion
-	use({
-		"phaazon/hop.nvim",
-		branch = "v2", -- optional but strongly recommended
-		config = function()
-			-- you can configure Hop the way you like here; see :h hop-config
-			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
-		end,
-	})
-
-	use({ "mg979/vim-visual-multi", branch = "master" })
-
 	-- project manager
 	-- Lua
 	use({
@@ -234,11 +234,19 @@ return require("packer").startup(function(use)
 	use({
 		"folke/trouble.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
+		cmd = "Trouble",
 		opts = {
 			-- your configuration comes here
 			-- or leave it empty to use the default settings
 			-- refer to the configuration section below
 		},
+		config = function()
+			require("trouble").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
 	})
 
 	-- Nui.nvim
@@ -299,8 +307,76 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-	-- harpoon
-	use("ThePrimeagen/harpoon")
+	-- Harpoon
+	use({
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+
+	-- Movement
+	use({
+		"ggandor/leap.nvim",
+		config = function()
+			require("leap").set_default_keymaps()
+		end,
+	})
+
+	-- Dressing
+	use({ "stevearc/dressing.nvim" })
+
+	-- Image Clip
+	use({
+		"HakonHarnes/img-clip.nvim",
+	})
+
+	-- Markdown
+	use({
+		"MeanderingProgrammer/render-markdown.nvim",
+		after = { "nvim-treesitter" },
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+		config = function()
+			require("render-markdown").setup({ file_types = { "markdown", "Avante", "vimwiki" } })
+		end,
+	})
+
+	-- AI Chat
+	use({
+		"yetone/avante.nvim",
+		build = "make BUILD_FROM_SOURCE=true",
+		lazy = false,
+		version = false,
+		BUILD_FROM_SOURCE = true,
+		requires = {
+			"nvim-treesitter/nvim-treesitter",
+			"stevearc/dressing.nvim",
+			"nvim-lua/plenary.nvim",
+			"MunifTanjim/nui.nvim",
+			"nvim-tree/nvim-web-devicons",
+			"HakonHarnes/img-clip.nvim",
+			"MeanderingProgrammer/render-markdown.nvim",
+		},
+	})
+
+	-- gitsign
+	use({ "lewis6991/gitsigns.nvim" })
+
+	-- Lazygit
+	use({
+		"kdheepak/lazygit.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
+
+	-- Kuala
+	use({
+		"mistweaverco/kulala.nvim",
+		opts = {},
+		config = function()
+			require("kulala").setup()
+		end,
+	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

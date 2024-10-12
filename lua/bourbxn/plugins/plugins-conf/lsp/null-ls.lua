@@ -22,7 +22,7 @@ null_ls.setup({
 		diagnostics.eslint_d.with({
 			-- only enable eslint if root has .eslintrc.js
 			condition = function(utils)
-				return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
+				return utils.root_has_file(".eslintrc.cjs"), utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
 			end,
 		}),
 		diagnostics.hadolint,

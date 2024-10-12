@@ -15,23 +15,19 @@ end
 
 -- list of servers for mason to install
 local servers = {
-	"pyright", -- python
-	"omnisharp", -- c#
-	"tsserver", -- javascript & typescript
+	"ts_ls", -- javascript & typescript
 	"html", -- html
 	"cssls", -- css
 	"tailwindcss", -- tailwind css
 	"lua_ls", -- lua
+	"jdtls", -- java
 	"dockerls", -- docker
 	"emmet_ls", -- emmet
 	"gopls", -- golang
-	"jdtls", -- java
 }
 
 -- list of linters & formatters for mason to install
 local formatters = {
-	"autopep8", -- python formatter
-	"csharpier", -- c# formatter
 	"prettier", -- ts, js formatter
 	"eslint_d", -- ts, js linter
 	"stylua", -- lua formatter

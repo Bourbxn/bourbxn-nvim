@@ -56,3 +56,6 @@ opt.foldlevelstart = 99
 opt.foldenable = true
 -- opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+
+-- status
+-- opt.laststatus = 3
