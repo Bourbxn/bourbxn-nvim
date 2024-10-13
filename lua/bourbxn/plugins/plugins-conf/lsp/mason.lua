@@ -34,7 +34,12 @@ local formatters = {
 	"hadolint", -- docker linter
 }
 
-mason.setup()
+mason.setup({
+	registries = {
+		"github:nvim-java/mason-registry",
+		"github:mason-org/mason-registry",
+	},
+})
 
 mason_lspconfig.setup({
 	ensure_installed = servers,
