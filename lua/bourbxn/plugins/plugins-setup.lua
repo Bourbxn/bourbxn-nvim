@@ -168,7 +168,7 @@ return require("packer").startup(function(use)
 							desc = "Config",
 							key = "c",
 							key_format = " %s", -- remove default surrounding `[]`
-							action = "edit ~/.config/nvim/",
+							action = "edit ~/.config/nvim/lua/bourbxn/plugins/plugins-setup.lua",
 						},
 						{
 							icon = "󰈆   ",
@@ -186,7 +186,7 @@ return require("packer").startup(function(use)
 						[[                                                                       ]],
 						[[                                                                       ]],
 						[[                                                                       ]],
-						"neovim loaded 49 packages",
+						"neovim loaded 64 packages",
 					}, --your footer
 				},
 			})
@@ -399,6 +399,41 @@ return require("packer").startup(function(use)
 			},
 		},
 	})
+
+	-- multiple cursor
+	use({
+		"brenton-leighton/multiple-cursors.nvim",
+		config = {
+			function()
+				require("multiple-cursors").setup()
+			end,
+		},
+	})
+
+	-- flutter tools
+	use({
+		"nvim-flutter/flutter-tools.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"stevearc/dressing.nvim", -- optional for vim.ui.select
+		},
+	})
+
+	use("simrat39/rust-tools.nvim")
+
+	use({
+		"mrcjkb/rustaceanvim",
+		version = "^5", -- Recommended
+		lazy = false, -- This plugin is already lazy
+		["rust-analyzer"] = {
+			cargo = {
+				allFeatures = true,
+			},
+		},
+	})
+
+	-- Transparent BG
+	use("xiyaowong/transparent.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

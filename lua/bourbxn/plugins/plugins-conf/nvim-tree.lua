@@ -16,8 +16,8 @@ nvimtree.setup({
 		signcolumn = "no",
 		width = 30, -- Ensure width matches the intended alignment
 		side = "left",
-		number = true,
-		relativenumber = true,
+		-- number = true,
+		-- relativenumber = true,
 		-- preserve_window_proportions = true,
 	},
 	renderer = {

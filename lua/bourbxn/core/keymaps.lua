@@ -74,6 +74,7 @@ keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickf
 
 -- Noice
 keymap.set("n", "<leader>nd", "<cmd>Noice dismiss<cr>")
+keymap.set("n", "<leader>nt", "<cmd>Noice telescope<cr>")
 
 -- Avante
 keymap.set({ "n", "v" }, "<leader>aa", "<cmd>AvanteAsk<cr>")
@@ -105,7 +106,7 @@ keymap.set("n", "<Leader>B", function()
 	require("dap").set_breakpoint()
 end)
 keymap.set("n", "<Leader>lp", function()
-	require("dap").set_breakpoint(nil, nil, input("Log point message: "))
+	require("dap").set_breakpoint(nil, nil, vim.input("Log point message: "))
 end)
 keymap.set("n", "<Leader>dr", function()
 	require("dap").repl.open()
@@ -133,3 +134,85 @@ keymap.set("n", "<Leader>db", function()
 	vim.cmd("NvimTreeClose")
 	require("dapui").toggle()
 end)
+
+-- Gitsigns
+keymap.set("n", "]c", function()
+	if vim.wo.diff then
+		vim.cmd.normal({ "]c", bang = true })
+	else
+		require("gitsigns").nav_hunk("next")
+	end
+end)
+
+keymap.set("n", "[c", function()
+	if vim.wo.diff then
+		vim.cmd.normal({ "[c", bang = true })
+	else
+		require("gitsigns").nav_hunk("prev")
+	end
+end)
+
+-- Actions
+keymap.set("n", "<leader>hs", function()
+	require("gitsigns").stage_hunk()
+end)
+keymap.set("n", "<leader>hr", function()
+	require("gitsigns").reset_hunk()
+end)
+keymap.set("v", "<leader>hs", function()
+	require("gitsigns").stage_hunk({ vim.fn.line("."), vim.fn.line("v") })
+end)
+keymap.set("v", "<leader>hr", function()
+	require("gitsigns").reset_hunk({ vim.fn.line("."), vim.fn.line("v") })
+end)
+keymap.set("n", "<leader>hS", function()
+	require("gitsigns").stage_buffer()
+end)
+keymap.set("n", "<leader>hu", function()
+	require("gitsigns").undo_stage_hunk()
+end)
+keymap.set("n", "<leader>hR", function()
+	require("gitsigns").reset_buffer()
+end)
+keymap.set("n", "<leader>hp", function()
+	require("gitsigns").preview_hunk()
+end)
+keymap.set("n", "<leader>hb", function()
+	require("gitsigns").blame_line({ full = true })
+end)
+keymap.set("n", "<leader>tb", function()
+	require("gitsigns").toggle_current_line_blame()
+end)
+keymap.set("n", "<leader>hd", function()
+	require("gitsigns").diffthis()
+end)
+keymap.set("n", "<leader>hD", function()
+	require("gitsigns").diffthis("~")
+end)
+keymap.set("n", "<leader>td", function()
+	require("gitsigns").toggle_deleted()
+end)
+
+-- Text object
+keymap.set({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
+
+-- Multiple cursor
+keymap.set({ "n", "x" }, "<C-n>", "<Cmd>MultipleCursorsAddDown<CR>")
+keymap.set({ "n", "x" }, "<C-p>", "<Cmd>MultipleCursorsAddUp<CR>")
+keymap.set({ "n", "i", "x" }, "<C-Up>", "<Cmd>MultipleCursorsAddUp<CR>")
+keymap.set({ "n", "i", "x" }, "<C-Down>", "<Cmd>MultipleCursorsAddDown<CR>")
+keymap.set({ "n", "i" }, "<C-LeftMouse>", "<Cmd>MultipleCursorsMouseAddDelete<CR>")
+keymap.set({ "n", "x" }, "<Leader>a", "<Cmd>MultipleCursorsAddMatches<CR>")
+keymap.set({ "n", "x" }, "<Leader>A", "<Cmd>MultipleCursorsAddMatchesV<CR>")
+-- keymap.set({ "n", "x" }, "<Leader>d", "<Cmd>MultipleCursorsAddJumpNextMatch<CR>")
+-- keymap.set({ "n", "x" }, "<Leader>D", "<Cmd>MultipleCursorsJumpNextMatch<CR>")
+keymap.set({ "n", "x" }, "<Leader>l", "<Cmd>MultipleCursorsLock<CR>")
+
+-- format
+keymap.set("n", "<leader>sf", function()
+	vim.lsp.buf.format()
+end)
+
+-- Flutter Tools
+keymap.set("n", "<c-r>", "<cmd>FlutterReload<cr>")
+keymap.set("n", "<c-R>", "<cmd>FlutterRestart<cr>")
