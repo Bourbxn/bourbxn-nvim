@@ -42,6 +42,7 @@ my configuration as much as you want. My neovim is the refference to newer neovi
 - Easy way to commenting with [Comment](https://github.com/numToStr/Comment.nvim)
 - Indent tab blankline with [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - Color highlighting with [nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors)
+- and other
 <br>
 
 ## Install
@@ -137,7 +138,7 @@ keymap.set("[mode]", "<leader>[keys]", "<cmd>[command]<cr>")
 
 <br>
 
-## Keymaps
+## Sample Keymaps
 
 ### Normal Mode
 
